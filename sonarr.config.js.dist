@@ -1,0 +1,12 @@
+exports.sonarrConfig = [{
+  id: 'sonarr',
+  sonarrIp: '192.168.0.123',
+  sonarrPort: '8989',
+  sonarrApiKey: 'the apikey from your sonarr system',
+  sonarrDownloadPath: '/volume1/Video/TV/',
+}];
+
+exports.globalConfig = {
+  authToken: 'whatever you need to make you feel safe',
+  listenerPort: '8089',
+};
