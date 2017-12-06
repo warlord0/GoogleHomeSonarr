@@ -32,7 +32,7 @@ const validateRequest = function (request) { // eslint-disable-line func-names
 
     if (request === null || request.query === request) {
       console.log('403 - Unauthorized request'); // eslint-disable-line no-console
-      reject(new ResponseException('403 - Unauthorized request', 403));
+      reject(new ResponseException('403 - Unauthorised request', 403));
       return;
     }
 
@@ -66,7 +66,7 @@ app.get('/', (request, response) =>
 
 app.post('/series', (request, response) => {
   validateRequest(request, response).then(() => {
-    Helper.sonarrSeriesLookup(request, response);
+    Helper.sonarrSeriesAdd(request, response);
     response.sendStatus(200);
   })
     .catch(error => handleResponse(response, error)); // eslint-disable-line arrow-parens
