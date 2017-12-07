@@ -21,7 +21,7 @@
     "nzbdrone"
   ],
   "author": "Warlord",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
